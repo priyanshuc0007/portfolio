@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyanshu Chauhan | AI & Data Science Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Layered dark atmosphere -->
+  <div class="grid-overlay"></div>
+  <div class="vignette"></div>
+  <div class="scanlines"></div>
+  <div class="top-glow"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">PC<span class="blink">_</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#experience">EXPERIENCE</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#education">EDUCATION</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <div class="nav-status"><span class="dot"></span>AVAILABLE FOR WORK</div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-tag">// DATA SCIENTIST & AI ENGINEER</div>
+      <h1 class="hero-name glitch" data-text="PRIYANSHU CHAUHAN">PRIYANSHU CHAUHAN</h1>
+      <div class="hero-subtitle">
+        <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        Building intelligent systems that transform complex business problems into 
+        production-ready AI solutions. Specialized in LLMs, Generative AI, and end-to-end ML pipelines.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">HIRE ME</a>
+        <a href="#experience" class="btn btn-outline">VIEW WORK</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-count="2">0</span>+ <span class="stat-label">Years Exp</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-count="10">0</span>+ <span class="stat-label">AI Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-count="15">0</span>+ <span class="stat-label">Tech Stack</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-container">
+        <div class="orbit orbit-1">
+          <div class="orbit-dot dot-python">PY</div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-dot dot-llm">LLM</div>
+        </div>
+        <div class="orbit orbit-3">
+          <div class="orbit-dot dot-aws">AWS</div>
+        </div>
+        <div class="core-ring">
+          <div class="core-inner">AI</div>
+        </div>
+      </div>
+      <div class="scan-line"></div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section about">
+    <div class="section-header">
+      <div class="section-tag">// 01</div>
+      <h2 class="section-title">ABOUT ME</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-card glass-card">
+        <div class="card-icon">&#x1F9E0;</div>
+        <h3>AI ARCHITECT</h3>
+        <p>Designing and deploying end-to-end ML and GenAI systems that solve real-world enterprise challenges at scale.</p>
+      </div>
+      <div class="about-card glass-card">
+        <div class="card-icon">&#x26A1;</div>
+        <h3>LLM ENGINEER</h3>
+        <p>Building LLM-powered automation pipelines, RAG systems, and agentic workflows using LangChain and Hugging Face.</p>
+      </div>
+      <div class="about-card glass-card">
+        <div class="card-icon">&#x1F4CA;</div>
+        <h3>DATA SCIENTIST</h3>
+        <p>Translating complex business problems into functional AI prototypes — from fraud detection to speech analytics.</p>
+      </div>
+    </div>
+    <div class="about-summary glass-card">
+      <div class="terminal-header">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">profile.json</span>
+      </div>
+      <div class="terminal-body">
+        <pre><code><span class="json-key">"name"</span>: <span class="json-str">"Priyanshu Chauhan"</span>,
+<span class="json-key">"role"</span>: <span class="json-str">"Data Scientist &amp; AI Engineer"</span>,
+<span class="json-key">"location"</span>: <span class="json-str">"Palwal, Haryana, India"</span>,
+<span class="json-key">"specialization"</span>: [
+  <span class="json-str">"Large Language Models"</span>,
+  <span class="json-str">"Generative AI"</span>,
+  <span class="json-str">"NLP &amp; Speech Analytics"</span>,
+  <span class="json-str">"ML System Design"</span>
+],
+<span class="json-key">"current_status"</span>: <span class="json-str">"Data Scientist @ Liberty Mutual Insurance"</span>,
+<span class="json-key">"open_to"</span>: <span class="json-str">"Senior AI/ML Roles"</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="section experience">
+    <div class="section-header">
+      <div class="section-tag">// 02</div>
+      <h2 class="section-title">EXPERIENCE</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="timeline">
+      <!-- Job 1 -->
+      <div class="timeline-item active-job">
+        <div class="timeline-marker">
+          <div class="marker-dot pulse"></div>
+          <div class="marker-line"></div>
+        </div>
+        <div class="timeline-card glass-card">
+          <div class="job-header">
+            <div>
+              <h3 class="job-title">Data Scientist – Actuarial</h3>
+              <div class="job-company">Liberty Mutual Insurance</div>
+            </div>
+            <div class="job-meta">
+              <span class="job-date">Apr 2025 – Present</span>
+              <span class="job-badge active">CURRENT</span>
+            </div>
+          </div>
+          <div class="job-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">&#x25B6;</span>
+              Designed and prototyped an <strong>LLM-based email classification</strong> system for bulk unseen categories
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">&#x25B6;</span>
+              Optimized <strong>DistilBERT pipeline</strong> by benchmarking against MiniBERT, TinyBERT, TF-IDF + Logistic Regression, and BiLSTM — achieving similar accuracy with reduced model size
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">&#x25B6;</span>
+              Implemented <strong>dual-head fine-tuning</strong> for simultaneous spam detection and sentiment analysis
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">&#x25B6;</span>
+              Built <strong>secondary fraud validation model</strong> to reduce false positives while preserving fraud recall — saving significant investigation costs
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">&#x25B6;</span>
+              Developed <strong>OCR + NLP legal document comparator</strong> reducing manual review time from days to minutes
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">&#x25B6;</span>
+              Built <strong>call audit platform</strong> using OpenAI Whisper + speaker diarization for sentiment, compliance, and agent performance evaluation
+            </div>
+          </div>
+          <div class="job-tags">
+            <span class="tag">LLM</span><span class="tag">DistilBERT</span><span class="tag">OCR</span>
+            <span class="tag">Whisper ASR</span><span class="tag">NLP</span><span class="tag">Fraud Detection</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="marker-dot"></div>
+          <div class="marker-line"></div>
+        </div>
+        <div class="timeline-card glass-card">
+          <div class="job-header">
+            <div>
+              <h3 class="job-title">Junior Data Scientist</h3>
+              <div class="job-company">Aqaim Technology &amp; Services Pvt. Ltd.</div>
+            </div>
+            <div class="job-meta">
+              <span class="job-date">Apr 2023 – Jan 2025</span>
+            </div>
+          </div>
+          <div class="job-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">&#x25B6;</span>
+              Performed comprehensive <strong>data preprocessing, feature engineering</strong>, and EDA for structured and unstructured datasets
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">&#x25B6;</span>
+              Built a <strong>RAG (Retrieval-Augmented Generation) PoC</strong> for contextual Q&amp;A over internal documents — improving information retrieval and reducing manual search effort
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">&#x25B6;</span>
+              Standardized and cleaned <strong>multi-source datasets</strong> to prepare training-ready data for downstream ML experimentation
+            </div>
+          </div>
+          <div class="job-tags">
+            <span class="tag">RAG</span><span class="tag">Feature Engineering</span><span class="tag">EDA</span>
+            <span class="tag">ML</span><span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section skills">
+    <div class="section-header">
+      <div class="section-tag">// 03</div>
+      <h2 class="section-title">SKILLS</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <!-- ML & Programming -->
+      <div class="skill-category glass-card">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon">&#x1F4BB;</div>
+          <h3>PROGRAMMING & ML</h3>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill level-expert">Python</span>
+          <span class="skill-pill level-expert">NumPy</span>
+          <span class="skill-pill level-expert">Pandas</span>
+          <span class="skill-pill level-expert">Scikit-learn</span>
+          <span class="skill-pill level-high">PyTorch</span>
+          <span class="skill-pill level-high">TensorFlow</span>
+          <span class="skill-pill level-high">Keras</span>
+          <span class="skill-pill level-high">Deep Learning</span>
+          <span class="skill-pill level-medium">SHAP</span>
+          <span class="skill-pill level-medium">Feature Engineering</span>
+        </div>
+        <div class="skill-bar-list">
+          <div class="skill-bar-item">
+            <span>Python</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <span>PyTorch / TensorFlow</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <span>Scikit-learn</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GenAI -->
+      <div class="skill-category glass-card featured">
+        <div class="glow-border"></div>
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon">&#x1F916;</div>
+          <h3>GENERATIVE AI & LLMs</h3>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill level-expert">LLM</span>
+          <span class="skill-pill level-expert">LangChain</span>
+          <span class="skill-pill level-expert">RAG</span>
+          <span class="skill-pill level-high">Hugging Face</span>
+          <span class="skill-pill level-high">Agentic Workflow</span>
+          <span class="skill-pill level-high">Vector DB</span>
+          <span class="skill-pill level-medium">Quantization</span>
+          <span class="skill-pill level-medium">Model Optimization</span>
+        </div>
+        <div class="skill-bar-list">
+          <div class="skill-bar-item">
+            <span>LLM / LangChain</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <span>RAG Systems</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <span>Hugging Face</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NLP & Speech -->
+      <div class="skill-category glass-card">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon">&#x1F5E3;</div>
+          <h3>NLP & SPEECH</h3>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill level-expert">Text Processing</span>
+          <span class="skill-pill level-expert">Semantic Matching</span>
+          <span class="skill-pill level-high">Whisper ASR</span>
+          <span class="skill-pill level-high">Speaker Diarization</span>
+          <span class="skill-pill level-high">Sentiment Analysis</span>
+          <span class="skill-pill level-medium">Compliance Analysis</span>
+        </div>
+        <div class="skill-bar-list">
+          <div class="skill-bar-item">
+            <span>NLP / Text Processing</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <span>Whisper / Diarization</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud -->
+      <div class="skill-category glass-card">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon">&#x2601;</div>
+          <h3>CLOUD & DATA ENG</h3>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill level-high">AWS EC2</span>
+          <span class="skill-pill level-high">AWS S3</span>
+          <span class="skill-pill level-high">Redshift</span>
+          <span class="skill-pill level-high">SQL</span>
+          <span class="skill-pill level-medium">boto3</span>
+          <span class="skill-pill level-medium">psycopg2</span>
+          <span class="skill-pill level-medium">ETL Pipelines</span>
+        </div>
+        <div class="skill-bar-list">
+          <div class="skill-bar-item">
+            <span>AWS (EC2, S3, Redshift)</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <span>SQL / ETL</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education" class="section education">
+    <div class="section-header">
+      <div class="section-tag">// 04</div>
+      <h2 class="section-title">EDUCATION</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card glass-card">
+        <div class="edu-icon">&#x1F393;</div>
+        <div class="edu-info">
+          <h3>Bachelor of Technology (B.Tech)</h3>
+          <div class="edu-institute">Maharshi Dayanand University, Rohtak</div>
+          <div class="edu-year">2019 – 2022</div>
+        </div>
+      </div>
+      <div class="edu-card glass-card">
+        <div class="edu-icon">&#x1F4D8;</div>
+        <div class="edu-info">
+          <h3>Diploma in Engineering</h3>
+          <div class="edu-institute">Government Polytechnic College, Manesar</div>
+          <div class="edu-year">2014 – 2017</div>
+        </div>
+      </div>
+      <div class="edu-card glass-card">
+        <div class="edu-icon">&#x1F4D6;</div>
+        <div class="edu-info">
+          <h3>Secondary School (CBSE)</h3>
+          <div class="edu-institute">Nishant Public School, Palwal</div>
+          <div class="edu-year">2013 – 2014</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section contact">
+    <div class="section-header">
+      <div class="section-tag">// 05</div>
+      <h2 class="section-title">CONTACT</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-content">
+      <div class="contact-intro glass-card">
+        <h3>LET'S BUILD SOMETHING INTELLIGENT</h3>
+        <p>Open to senior AI/ML roles, consulting opportunities, and interesting GenAI projects. Let's connect.</p>
+        <div class="contact-links">
+          <a href="mailto:priyanshuc111@gmail.com" class="contact-link">
+            <div class="contact-link-icon">&#x2709;</div>
+            <div>
+              <div class="contact-link-label">EMAIL</div>
+              <div class="contact-link-val">priyanshuc111@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+917015110652" class="contact-link">
+            <div class="contact-link-icon">&#x1F4DE;</div>
+            <div>
+              <div class="contact-link-label">PHONE</div>
+              <div class="contact-link-val">+91 7015110652</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/priyanshu-chauhan-62517a26a" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="contact-link-icon">&#x1F517;</div>
+            <div>
+              <div class="contact-link-label">LINKEDIN</div>
+              <div class="contact-link-val">priyanshu-chauhan-62517a26a</div>
+            </div>
+          </a>
+          <div class="contact-link location-item">
+            <div class="contact-link-icon">&#x1F4CD;</div>
+            <div>
+              <div class="contact-link-label">LOCATION</div>
+              <div class="contact-link-val">Palwal, Haryana, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">PRIYANSHU CHAUHAN</div>
+      <div class="footer-copy">&#169; 2026 · Built with passion for AI</div>
+      <div class="footer-status"><span class="dot"></span>SYSTEMS ONLINE</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
